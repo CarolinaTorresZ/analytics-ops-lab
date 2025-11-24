@@ -55,7 +55,7 @@ Los notebooks están numerados secuencialmente dentro de sus carpetas para facil
 ### 1. 📂 `parte1_ciclo_modelo/`
 *   **01_preparacion_y_eda:** Ejecutar primero para limpiar los datos y generar el dataset base.
 *   **02_entrenamiento_y_tracking:** Entrena los modelos y genera los artefactos en MLflow.
-*   **03_registro_y_carga:** *Nota:* Se incluyen dos versiones para cubrir los puntos 4.a y 4.b de las instrucciones:
+*   **03_registro_y_carga:** 
     *   `03_a_registro_y_carga_artefactos`: Ejecutar si no se tiene acceso a Unity Catalog (Uso de `runs:/`).
     *   `03_b_registro_y_carga_uc`: Ejecutar para validar el flujo ideal con Unity Catalog (`models:/`).
 
