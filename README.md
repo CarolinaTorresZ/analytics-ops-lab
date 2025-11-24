@@ -81,7 +81,7 @@ Se implementó un pipeline completo de MLOps para predecir la fuga de clientes.
 
 ### 2. Ejecución y Estrategia
 *   **Preparación:** Limpieza de datos, conversión de tipos numéricos y manejo de nulos.
-*   **Entrenamiento:** Se entrenaron múltiples modelos (Logistic Regression, Random Forest) registrando métricas (AUC, Accuracy) y parámetros en **MLflow Tracking** para garantizar la auditabilidad del experimento.
+*   **Entrenamiento:** Se entrenaron dos modelos (Logistic Regression, Random Forest) registrando métricas (AUC, Accuracy) y parámetros en **MLflow Tracking** para garantizar la auditabilidad del experimento.
 *   **Despliegue Híbrido (Decisión Técnica):**
     *   Se incluyen **dos estrategias** de carga en el paso 3:
     *   `03_a`: Carga basada en **Artefactos (Run ID)** Demuestra cómo cargar el modelo productivo directamente desde los **Artefactos de MLflow** usando el `Run ID`, asegurando que la operación no se detenga por fallos en el catálogo central.
@@ -101,7 +101,7 @@ Se construyó un sistema de *Retrieval-Augmented Generation* modularizado para c
 *   **Ingesta y Chunking:** Extracción limpia de HTML y segmentación semántica  por **párrafos completos** con un límite de 1000 caracteres. Esto preserva el contexto semántico mejor que el corte arbitrario por longitud fija.
 *   **Embeddings (Decisión de Costo/Eficiencia):**
     *   Se utilizó el modelo Open Source **`sentence-transformers/all-MiniLM-L6-v2`** ejecutado localmente.
-    *   *Justificación:* Dado que el entorno gratuito no posee endpoints de embeddings de pago (Azure OpenAI / Databricks Foundation Models provisionados). Permite generar embeddings de alta calidad localmente en el driver del cluster sin costos adicionales ni dependencias de API externas.
+    *   *Justificación:* Dado que el entorno gratuito no posee endpoints de embeddings  (Azure OpenAI / Databricks Foundation Models provisionados). Por ende se utilizó el modelo Open Source ya que permite generar embeddings de alta calidad localmente en el driver del cluster sin costos adicionales ni dependencias de API externas.
 *   **Retrieval:** Búsqueda vectorial mediante similitud de coseno (Producto punto).
 *   **LLM & Grounding:**
     *   Se utilizó una función de "Health Check" que busca dinámicamente endpoints activos (Llama 3) para garantizar la resiliencia del notebook.
