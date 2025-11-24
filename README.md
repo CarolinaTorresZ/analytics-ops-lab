@@ -1,6 +1,6 @@
 # Prueba Técnica – Soporte a la Operación de Modelos Analíticos (IT)
 
-**Candidata:** Carolina Torres Zapata  
+**Autor:** Carolina Torres Zapata  
 **Fecha:** 24 de Noviembre 2025  
 **Plataforma:** Databricks (Community/Free Edition)
 
@@ -38,7 +38,12 @@ El repositorio está organizado siguiendo el flujo lógico de la prueba y una ar
 ├── data/                         # Simulación Data Lake (Medallion Architecture)
 │   ├── bronze/                   # Datos crudos (csv, txt)
 │   ├── silver/                   # Datos procesados y tablas delta
-│   └── ml_models/                
+│   └── ml_models/                # Artefacto serializado (.pkl) para validación local
+│
+├── evidencia/                     # Capturas de Pantalla (Prueba de Ejecución)
+│   ├── mlflow_tracking_ui.png
+│   ├── unity_catalog_model_registry.png
+│   └── uc_volumes.png                
 │
 └── README.md                     # Documentación técnica
 ```
@@ -139,3 +144,12 @@ Para facilitar la validación de la prueba sin acceso directo al Workspace de Da
     *   El notebook 12 asume la existencia de un Endpoint de Databricks (`databricks-meta-llama-3...`). Se incluyó una lógica de **"Health Check"** que busca dinámicamente endpoints disponibles para evitar fallos si el nombre del modelo cambia.
 
 ---
+
+## 📸 Evidencia de Ejecución (Platform Screenshots)
+
+Para validar la correcta configuración de los servicios de plataforma, se incluye la carpeta **/evidencia** con capturas de pantalla que demuestran:
+
+*   **Gobierno de Datos:** Estructura de esquemas y tablas en **Unity Catalog** (`evidencia/unity_catalog_schema.png`).
+*   **Gestión de Modelos:** El registro del modelo en la UI de MLflow con sus respectivas versiones y etiquetas de gobernanza inyectadas dinámicamente (`evidencia/model_registry_tags.png`).
+*   **Tracking:** Tablero de experimentos de MLflow mostrando la comparativa de métricas de los modelos entrenados (`evidencia/mlflow_tracking_ui.png`).
+*   **Almacenamiento No Estructurado:** Visualización del **Unity Catalog Volume** con los documentos crudos ingestados para el sistema RAG (`evidencia/uc_volumes.png`).
