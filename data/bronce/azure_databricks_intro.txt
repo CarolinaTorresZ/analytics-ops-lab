@@ -1,0 +1,95 @@
+Nota:
+
+El acceso a esta página requiere autorización. Puede intentar iniciar sesión o cambiar directorios .
+
+El acceso a esta página requiere autorización. Puede intentar cambiar los directorios .
+
+¿Qué es Azure Databricks?
+
+Azure Databricks es una plataforma de análisis unificada y abierta para crear, implementar, compartir y mantener soluciones de datos, análisis e IA de nivel empresarial a escala. Databricks Data Intelligence Platform se integra con el almacenamiento en la nube y la seguridad de su cuenta en la nube, y administra e implementa la infraestructura en la nube para usted.
+
+Azure Databricks usa inteligencia artificial generativa con el almacén de lago de datos para comprender la semántica única de los datos. A continuación, optimiza automáticamente el rendimiento y administra la infraestructura para adaptarla a las necesidades de su empresa.
+
+El procesamiento de lenguaje natural aprende el idioma de su empresa, por lo que puede buscar y detectar datos haciendo una pregunta en sus propias palabras. La asistencia del lenguaje natural le ayuda a escribir código, solucionar errores y encontrar respuestas en la documentación.
+
+Integración de código abierto administrado
+
+Databricks se compromete a la comunidad de código abierto y administra las actualizaciones de integraciones de código abierto con las versiones de Databricks Runtime. Las siguientes tecnologías son proyectos de código abierto que crearon al principio empleados de Databricks:
+
+Delta Lake y Delta Sharing
+
+MLflow
+
+Apache Spark y flujos estructurados
+
+Redash
+
+Catálogo de Unity
+
+Casos de uso comunes
+
+Los siguientes casos de uso resaltan algunas de las formas en que los clientes usan Azure Databricks para realizar tareas esenciales para procesar, almacenar y analizar los datos que impulsan las decisiones y las funciones empresariales críticas.
+
+Creación de un almacén de lago de datos empresarial
+
+Data Lakehouse combina almacenes de datos empresariales y lagos de datos para acelerar, simplificar y unificar soluciones de datos empresariales. Los ingenieros de datos, los científicos de datos, los analistas y los sistemas de producción pueden usar el data lakehouse como origen único de verdad, lo que proporciona acceso a datos coherentes y reduce las complejidades de creación, mantenimiento y sincronización de muchos sistemas de datos distribuidos. Consulte ¿Qué es un almacén de lago de datos? .
+
+ETL e ingeniería de datos
+
+Independientemente de si está generando paneles o potenciando aplicaciones de inteligencia artificial, la ingeniería de datos proporciona la red troncal para las empresas centradas en datos al asegurarse de que los datos están disponibles, limpios y almacenados en modelos de datos para una detección y uso eficaces. Azure Databricks combina la eficacia de Apache Spark con Delta y herramientas personalizadas para proporcionar una experiencia ETL inigualable. Use SQL, Python y Scala para componer la lógica ETL y organizar la implementación de trabajos programados con unos pocos clics.
+
+Las canalizaciones declarativas de Spark de Lakeflow simplifican aún más ETL mediante la administración inteligente de dependencias entre conjuntos de datos e implementan y escalan automáticamente la infraestructura de producción para garantizar una entrega de datos oportuna y precisa a las especificaciones.
+
+Azure Databricks proporciona herramientas personalizadas para ingesta de datos , incluida Auto Loader , una herramienta eficaz y escalable para cargar datos de forma incremental e idempotente desde el almacenamiento de objetos en la nube y lagos de datos en el centro de lago de datos.
+
+Aprendizaje automático, inteligencia artificial y ciencia de datos
+
+El aprendizaje automático de Azure Databricks amplía la funcionalidad básica de la plataforma con un conjunto de herramientas adaptadas a las necesidades de los científicos de datos e ingenieros de aprendizaje automático, incluidos MLflow y Databricks Runtime para Machine Learning .
+
+Modelos de lenguaje grandes e inteligencia artificial generativa
+
+Databricks Runtime para Machine Learning incluye bibliotecas como Hugging Face Transformers que permiten integrar modelos previamente entrenados existentes u otras bibliotecas de código abierto en el flujo de trabajo. La integración de MLflow de Databricks facilita el uso del servicio de seguimiento de MLflow con canalizaciones, modelos y componentes de procesamiento de transformadores. Integre modelos o soluciones de OpenAI de asociados como John Snow Labs en los flujos de trabajo de Databricks.
+
+Con Azure Databricks, personalice un LLM en función de sus datos para su tarea específica. Con el apoyo de herramientas de código abierto, como Hugging Face y DeepSpeed, puede tomar eficazmente un modelo básico de LLM y comenzar a entrenar con sus propios datos para mejorar la precisión en su dominio y carga de trabajo.
+
+Además, Azure Databricks proporciona funciones de inteligencia artificial que los analistas de datos de SQL pueden usar para acceder a los modelos LLM, como desde OpenAI, directamente dentro de sus canalizaciones de datos y flujos de trabajo. Consulte Aplicación de inteligencia artificial en datos mediante Azure Databricks AI Functions .
+
+Almacenamiento de datos, análisis y BI
+
+Azure Databricks combina interfaces de usuario fáciles de usar con recursos de proceso rentables y almacenamiento asequible infinitamente escalable para proporcionar una plataforma eficaz para ejecutar consultas analíticas. Los administradores configuran clústeres de proceso escalables como almacenes de SQL , lo que permite a los usuarios finales ejecutar consultas sin preocuparse por ninguna de las complejidades de trabajar en la nube. Los usuarios de SQL pueden ejecutar consultas en los datos del almacén de lago de datos mediante el editor de consultas SQL o en cuadernos. Los cuadernos admiten Python, R y Scala, además de SQL, y permiten a los usuarios insertar las mismas visualizaciones disponibles en paneles heredados junto con vínculos, imágenes y comentarios escritos en Markdown.
+
+Gobernanza de datos y uso compartido seguro de datos
+
+El catálogo de Unity proporciona un modelo unificado de gobernanza de datos para el almacén de lago de datos. Los administradores de la nube configuran e integran permisos de control de acceso generales para el catálogo de Unity y, a continuación, los administradores de Azure Databricks pueden administrar los permisos para los equipos e individuos. Los privilegios se administran con listas de control de acceso (ACL) a través de interfaces de usuario fáciles de usar o sintaxis SQL, lo que facilita a los administradores de bases de datos la protección del acceso a los datos sin necesidad de escalar en la administración de acceso a identidades nativas de la nube (IAM) y las redes.
+
+El catálogo de Unity facilita la ejecución de análisis seguros en la nube y proporciona una división de responsabilidades que ayuda a limitar la capacidad de reciclarse o aprender nuevas aptitudes necesarias para los administradores y los usuarios finales de la plataforma. Consulte ¿Qué es Unity Catalog?
+
+El almacén de lago de datos hace que el uso compartido de datos en su organización sea tan sencillo como conceder acceso de consulta a una tabla o vista. Para el uso compartido fuera del entorno seguro, el catálogo de Unity incluye una versión administrada de Delta Sharing .
+
+DevOps, CI/CD y orquestación de tareas
+
+Cada uno de los ciclos de vida de desarrollo para canalizaciones de ETL, modelos de ML y paneles de análisis presenta sus propios desafíos únicos. Azure Databricks permite a todos los usuarios aprovechar un único origen de datos, lo que reduce la duplicación de esfuerzos y los informes fuera de sincronización. Al proporcionar además un conjunto de herramientas comunes para el control de versiones, la automatización, la programación, la implementación de código y los recursos de producción, puede simplificar la sobrecarga de supervisión, orquestación y operaciones.
+
+Los trabajos programan cuadernos de Azure Databricks, consultas SQL y otro código arbitrario. Los conjuntos de recursos de Databricks permiten definir, implementar y ejecutar recursos de Databricks, como trabajos y canalizaciones mediante programación. Las carpetas de Git le permiten sincronizar los proyectos de Azure Databricks con varios proveedores de Git populares.
+
+Para conocer los procedimientos recomendados y recomendaciones de CI/CD, consulte Procedimientos recomendados y flujos de trabajo de CI/CD recomendados en Databricks . Para obtener información general completa sobre las herramientas para desarrolladores, consulte Desarrollo en Databricks .
+
+Análisis de streaming y en tiempo real
+
+Azure Databricks aprovecha Structured Streaming de Apache Spark para trabajar con datos de streaming y cambios incrementales de datos. Structured Streaming se integra estrechamente con Delta Lake, y estas tecnologías proporcionan las bases para Lakeflow Spark Declarative Pipelines y Auto Loader. Consulte los conceptos de Structured Streaming .
+
+Procesamiento transaccional en línea
+
+Lakebase es una base de datos de procesamiento transaccional en línea (OLTP) que está totalmente integrada con databricks Data Intelligence Platform. Esta base de datos postgres totalmente administrada permite crear y administrar bases de datos OLTP almacenadas en el almacenamiento administrado por Azure Databricks. Consulte ¿Qué es Lakebase? .
+
+Comentarios
+
+¿Le ha resultado útil esta página?
+
+¿Necesita ayuda con este tema?
+
+¿Desea intentar usar Ask Learn para aclarar o guiarle a través de este tema?
+
+Recursos adicionales
+
+Last updated on 2025-11-05
